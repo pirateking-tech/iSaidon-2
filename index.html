@@ -156,9 +156,11 @@
                 const fileId = getStreamtapeId(targetLink);
                 
                 // If it's a valid Streamtape link, show a Fast Download button pointing to your download.php script
+                // Replace it with this (Make sure to use YOUR actual worker URL):
                 const downloadButtonHtml = fileId 
-                    ? `<a href="download.php?id=${fileId}" target="_blank" class="watch-btn" style="background:#00a8ff; margin-top:8px;">⚡ Fast Download</a>`
+                    ? `<a href="https://workers.dev{fileId}" target="_blank" class="watch-btn" style="background:#00a8ff; margin-top:8px;">⚡ Fast Download</a>`
                     : '';
+
 
                 const movieCard = document.createElement('div');
                 movieCard.className = 'movie-card';
